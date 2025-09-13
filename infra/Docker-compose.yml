@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ../my-backend-app
+    container_name: backend-restaurant
+    ports:
+      - "3000:3000"
+    volumes:
+      - ../my-backend-app:/app
+      - /app/node_modules
+    environment:
+      - API_KEY=${API_KEY}
+
+  frontend:
+    build: ../my-frontend-app
+    container_name: frontend-restaurant
+    ports:
+      - "3001:3001"
+    volumes:
+      - ../my-frontend-app:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    environment:
+      - NEXT_PUBLIC_BACKEND_URL=${NEXT_PUBLIC_BACKEND_URL}
