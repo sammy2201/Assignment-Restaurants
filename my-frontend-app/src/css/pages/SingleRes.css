@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quintessential&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Quintessential&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lora:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600&display=swap");
 
 body {
   margin: 0;
@@ -13,7 +14,7 @@ body {
 
 .restaurant-page {
   color: #111827;
-  background-color: #e5ead4;
+  background-color: #f0fdf4;
   padding: 0 5vw 100px 5vw;
 }
 
@@ -22,12 +23,12 @@ body {
   margin: 0 0 24px 0;
   font-size: 4rem;
   font-weight: 700;
-  color: #18230f;
-  background-color: #e5ead4;
+  color: #263238;
+  background-color: #f0fdf4;
   text-align: center;
   padding: 90px 0 96px 0;
-  font-family: "Quintessential", serif;
-  font-weight: 400;
+  font-family: "Lora", serif;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -59,9 +60,11 @@ body {
 }
 
 .single-res-card {
-  background-color: #f1f1f1;
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
   padding: 20px;
   border-radius: 16px;
+  border: 1px solid #d1fae5;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   overflow: auto;
