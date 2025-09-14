@@ -38,7 +38,7 @@ A guide-like single-page application (SPA) introducing users to various restaura
 - Docker and Docker Compose (if using containerization)
 - Google Places API key
 
-## With Docker (Local)
+## With Docker
 
 ### Environment Variables
 
@@ -66,7 +66,7 @@ Create a `.env` file for your infra folder:
 2. Frontend: [http://localhost:3001](http://localhost:3001)
    Backend: [http://localhost:3000](http://localhost:3000)
 
-## Without Docker
+## Without Docker (Local)
 
 ### Environment Variables
 
