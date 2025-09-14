@@ -67,6 +67,7 @@ export default function HomePage() {
     setPage(1);
     setHasMore(true);
     fetchRestaurants(1);
+    window.scrollBy({ top: 300, behavior: "smooth" });
   };
 
   const handleScroll = () => {
