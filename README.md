@@ -8,18 +8,19 @@ A guide-like single-page application (SPA) introducing users to various restaura
 
 - Single-page React app built with Next.js and TypeScript.
 - Overview page showing a list of restaurants.
-- Detailed restaurant cards with additional information.
-- Optional map integration showing restaurant locations.
+- Detailed restaurant page with additional information.
+- Map integration showing restaurant locations.
 
 ### Backend
 
 - Fastify server in Node.js with TypeScript.
 - Routes for fetching all restaurants and fetching a specific restaurant.
 - Integrates with Google Places API to provide restaurant data.
+- Integrated with Google Geocoding API to get latitude and longitude of a place
 
-### Optional / Additional Features
+### Additional Features
 
-- Filters restaurants by criteria such as type, location, or date.
+- Filters restaurants by criteria such as Rating, Open now, or Serves Beer.
 - Containerized using Docker and orchestrated with Docker Compose.
 
 ## Tech Stack
@@ -37,35 +38,45 @@ A guide-like single-page application (SPA) introducing users to various restaura
 - Docker and Docker Compose (if using containerization)
 - Google Places API key
 
-### Environment Variables
+### Environment Variables (With Docker)
 
-Create a `.env` file for your backend:
+Create a `.env` file in your my-backend-app:
+PORT=3000
+
+Create a `.env` file for your infra folder:
+NEXT_PUBLIC_BACKEND_URL=http://backend:3000
+API_KEY=your_google_places_api_key
+
+### Environment Variables (Without Docker)
+
+Create a `.env` file in your my-backend-app:
 PORT=3000
 API_KEY=your_google_places_api_key
 
-Create a `.env` file for your frontend:
-NEXT_PUBLIC_BACKEND_URL=http://localhost:3000
+Create a `.env` file for your my-frontend-app folder:
+NEXT_PUBLIC_BACKEND_URL= http://localhost:3000
+
+### Running with Docker
+
+1. cd infra
+2. Build and start containers:
+   docker-compose up --build
+3. Frontend: [http://localhost:3001](http://localhost:3001)
+   Backend: [http://localhost:3000](http://localhost:3000)
 
 ### Running Locally (Without Docker)
 
 1. Start the backend:
-   cd backend
+   cd my-backend-app
    npm install
    npx tsx src/index.ts
 
 2. Start the frontend:
-   cd frontend
+   cd my-frontend-app
    npm install
    npm run dev -- -p 3001
 
 3. Open your browser at [http://localhost:3001](http://localhost:3001).
-
-### Running with Docker
-
-1. Build and start containers:
-   docker-compose up --build
-2. Frontend: [http://localhost:3001](http://localhost:3001)
-   Backend: [http://localhost:3000](http://localhost:3000)
 
 ## Project Structure
 
