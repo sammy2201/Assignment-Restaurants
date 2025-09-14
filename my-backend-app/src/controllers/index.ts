@@ -68,7 +68,6 @@ export async function getAllRestaurants(
       data: {
         page: pageNum,
         results,
-        hasMore: !!nextPageTokens[key],
       },
       message: "Restaurants fetched successfully",
     });
