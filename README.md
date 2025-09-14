@@ -41,11 +41,11 @@ A guide-like single-page application (SPA) introducing users to various restaura
 ### Environment Variables (With Docker)
 
 Create a `.env` file in your my-backend-app:
-PORT=3000
+`PORT=3000`
 
 Create a `.env` file for your infra folder:
-NEXT_PUBLIC_BACKEND_URL=http://backend:3000
-API_KEY=your_google_places_api_key
+`NEXT_PUBLIC_BACKEND_URL=http://backend:3000`
+`API_KEY=your_google_places_api_key`
 
 ### Environment Variables (Without Docker)
 

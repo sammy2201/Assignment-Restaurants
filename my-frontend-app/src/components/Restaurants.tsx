@@ -62,7 +62,7 @@ export default function Restaurants({
             <option value="rating-asc">Rating: Low → High</option>
             <option value="rating-desc">Rating: High → Low</option>
             <option value="open-now">Open Now</option>
-            <option value="bar">Bar</option>
+            <option value="bar">Serves Beer</option>
           </select>
         </div>
 
