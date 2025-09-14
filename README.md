@@ -90,8 +90,6 @@ Create a `.env` file for your my-frontend-app folder:
    npx tsx src/index.ts
    ```
 
-````
-
 2. Start the frontend:
 
    ```bash
@@ -121,4 +119,3 @@ README.md
 - Ensure backend is running before accessing the frontend.
 - Client-side code accesses the backend through `NEXT_PUBLIC_BACKEND_URL`.
 - Backend must listen on `0.0.0.0` for container networking.
-````
