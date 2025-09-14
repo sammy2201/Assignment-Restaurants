@@ -11,6 +11,12 @@ export default function Search({
   setLocation: (val: string) => void;
   onSearch: () => void;
 }) {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      onSearch();
+    }
+  };
+
   return (
     <div className="search-container">
       <div className="search-box">
@@ -19,6 +25,7 @@ export default function Search({
           type="text"
           value={location}
           onChange={(e) => setLocation(e.target.value)}
+          onKeyDown={handleKeyDown}
           placeholder="Enter location"
           className="search-input"
         />
