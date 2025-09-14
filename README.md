@@ -38,7 +38,9 @@ A guide-like single-page application (SPA) introducing users to various restaura
 - Docker and Docker Compose (if using containerization)
 - Google Places API key
 
-### Environment Variables (With Docker)
+## With Docker
+
+### Environment Variables
 
 Create a `.env` file in your my-backend-app:
 
@@ -52,7 +54,21 @@ Create a `.env` file for your infra folder:
 
 `API_KEY=your_google_places_api_key`
 
-### Environment Variables (Without Docker)
+### Running
+
+1. Build and start containers
+
+```bash
+  cd infra
+  docker-compose up --build
+```
+
+2. Frontend: [http://localhost:3001](http://localhost:3001)
+   Backend: [http://localhost:3000](http://localhost:3000)
+
+## Without Docker
+
+### Environment Variables
 
 Create a `.env` file in your my-backend-app:
 
@@ -64,15 +80,7 @@ Create a `.env` file for your my-frontend-app folder:
 
 `NEXT_PUBLIC_BACKEND_URL= http://localhost:3000`
 
-### Running with Docker
-
-1. cd infra
-2. Build and start containers:
-   docker-compose up --build
-3. Frontend: [http://localhost:3001](http://localhost:3001)
-   Backend: [http://localhost:3000](http://localhost:3000)
-
-### Running Locally (Without Docker)
+### Running Locally
 
 1. Start the backend:
 
@@ -81,6 +89,8 @@ Create a `.env` file for your my-frontend-app folder:
    npm install
    npx tsx src/index.ts
    ```
+
+````
 
 2. Start the frontend:
 
@@ -111,7 +121,4 @@ README.md
 - Ensure backend is running before accessing the frontend.
 - Client-side code accesses the backend through `NEXT_PUBLIC_BACKEND_URL`.
 - Backend must listen on `0.0.0.0` for container networking.
-
-```
-
-```
+````
