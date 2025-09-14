@@ -41,20 +41,28 @@ A guide-like single-page application (SPA) introducing users to various restaura
 ### Environment Variables (With Docker)
 
 Create a `.env` file in your my-backend-app:
+
 `PORT=3000`
 
+`API_KEY=your_google_places_api_key`
+
 Create a `.env` file for your infra folder:
+
 `NEXT_PUBLIC_BACKEND_URL=http://backend:3000`
+
 `API_KEY=your_google_places_api_key`
 
 ### Environment Variables (Without Docker)
 
 Create a `.env` file in your my-backend-app:
-PORT=3000
-API_KEY=your_google_places_api_key
+
+`PORT=3000`
+
+`API_KEY=your_google_places_api_key`
 
 Create a `.env` file for your my-frontend-app folder:
-NEXT_PUBLIC_BACKEND_URL= http://localhost:3000
+
+`NEXT_PUBLIC_BACKEND_URL= http://localhost:3000`
 
 ### Running with Docker
 
@@ -67,14 +75,20 @@ NEXT_PUBLIC_BACKEND_URL= http://localhost:3000
 ### Running Locally (Without Docker)
 
 1. Start the backend:
+
+   ```bash
    cd my-backend-app
    npm install
    npx tsx src/index.ts
+   ```
 
 2. Start the frontend:
+
+   ```bash
    cd my-frontend-app
    npm install
    npm run dev -- -p 3001
+   ```
 
 3. Open your browser at [http://localhost:3001](http://localhost:3001).
 
@@ -97,3 +111,7 @@ README.md
 - Ensure backend is running before accessing the frontend.
 - Client-side code accesses the backend through `NEXT_PUBLIC_BACKEND_URL`.
 - Backend must listen on `0.0.0.0` for container networking.
+
+```
+
+```
