@@ -20,6 +20,7 @@ async function getCoordinates(locationName: string): Promise<Coordinates> {
 
 const nextPageTokens: Record<string, string | null> = {};
 
+// to get all the restaurants based on location or lat,lng
 export async function getAllRestaurants(
   request: FastifyRequest<{ Querystring: RestaurantQuery }>,
   reply: FastifyReply
@@ -80,6 +81,7 @@ export async function getAllRestaurants(
   }
 }
 
+// to get restaurant details by place_id
 export async function getRestaurantById(
   request: FastifyRequest<{ Params: { id: string } }>,
   reply: FastifyReply
