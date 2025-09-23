@@ -2,6 +2,26 @@
 
 A guide-like single-page application (SPA) introducing users to various restaurants. The app features a user-friendly frontend and a backend that interacts with the Google Places API, treating it as a structured database.
 
+
+## User Flow
+
+1. Open Web App
+   - The user opens the web app in their browser.
+
+2. Search for a Location/City/Area
+   - The user enters a location, city, or area in the search bar.
+
+3. View List of Restaurants
+   - A list of restaurants in the specified location will appear on the page.
+
+4. Click on a Restaurant Card
+   - The user clicks on any restaurant card from the list to view more details.
+
+5. Detailed Restaurant View
+   - A new page opens, displaying detailed information about the selected restaurant.
+     - The page includes the restaurant's name, description, contact details, and location.
+     - The location is displayed on an interactive map.
+
 ## Features
 
 ### Frontend
