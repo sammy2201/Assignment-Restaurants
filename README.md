@@ -122,11 +122,13 @@ Create a `.env` file for your my-frontend-app folder:
 
 ## Project Structure
 
+```text
 /project-root
-/frontend # Next.js React app
-/backend # Fastify backend
-/infra/docker-compose.yml
-README.md
+├── my-frontend-app/              
+├── my-backend-app/                
+├── infra/                  # Infrastructure config (e.g. Docker)
+│   └── docker-compose.yml   
+└── README.md               # Project documentation
 
 ## API Endpoints
 
