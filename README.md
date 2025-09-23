@@ -129,6 +129,7 @@ Create a `.env` file for your my-frontend-app folder:
 ├── infra/                  # Infrastructure config (e.g. Docker)
 │   └── docker-compose.yml   
 └── README.md               # Project documentation
+```
 
 ## API Endpoints
 
