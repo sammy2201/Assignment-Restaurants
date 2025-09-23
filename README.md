@@ -35,7 +35,7 @@ A guide-like single-page application (SPA) introducing users to various restaura
 ### Prerequisites
 
 - Node.js 20+
-- Docker and Docker Compose (if using containerization)
+- Docker Desktop and Docker Compose (if using containerization)
 - Google Places API key
 
 ## With Docker
