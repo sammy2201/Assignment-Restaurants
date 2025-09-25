@@ -2,7 +2,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #c8e6c9;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -17,7 +17,7 @@ h2 {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 90vw;
   margin: 0 auto;
   border-radius: 12px;
   overflow-y: auto;
@@ -55,13 +55,13 @@ h2 {
 }
 
 .filters h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .filter-dropdown {
   padding: 10px 14px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: inherit;
   color: #18230f;
   border: 1px solid #d1d5db;
