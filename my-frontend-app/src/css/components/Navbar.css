@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lora:wght@400;600&display=swap");
 
 .navbar {
-  background-color: #0b0031;
+  background-color: #0a0025;
   padding: 20px 24px;
   display: flex;
   align-items: center;
@@ -17,6 +17,7 @@
   letter-spacing: 0.5px;
   color: #ffffff;
   text-decoration: none;
+  display: inline-block;
   transition: color 0.2s ease;
 }
 

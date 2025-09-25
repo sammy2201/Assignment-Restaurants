@@ -116,7 +116,7 @@ export default function RestaurantPage() {
 
       <div className="section-wrapper">
         {/* section 3 */}
-        <div className="single-res-card opening-hours info-block ">
+        <div className="single-res-card opening-hours info-block">
           {restaurant.opening_hours?.weekday_text && (
             <div className="restaurant-hours">
               <b>Opening Hours:</b>
@@ -136,11 +136,11 @@ export default function RestaurantPage() {
               <ul>
                 {restaurant.reviews.slice(0, 8).map((review, idx) => (
                   <li key={idx} className="review-item">
-                    <p>
-                      <b>{review.author_name}</b> ({review.rating}{" "}
-                      <Star size={16} fill="#facc15" stroke="#facc15" />)
-                    </p>
-                    <p>{review.text}</p>
+                    <b>{review.author_name}</b>({review.rating}{" "}
+                    <span className="review-number">
+                      <Star size={16} fill="#facc15" stroke="#facc15" />
+                    </span>
+                    )<p>{review.text}</p>
                   </li>
                 ))}
               </ul>
